@@ -24,8 +24,8 @@ enum markdown_formats {
     ODF_FORMAT
 };
 
-GString * markdown_to_g_string(char *text, int extensions, int output_format);
-char * markdown_to_string(char *text, int extensions, int output_format);
+GString * markdown_to_g_string(const char *text, int extensions, int output_format);
+char * markdown_to_string(const char *text, int extensions, int output_format);
 
 #ifdef __cplusplus
 }
